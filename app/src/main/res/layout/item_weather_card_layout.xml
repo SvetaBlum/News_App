@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp">
+
+        <ImageView
+            android:id="@+id/state_im"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="150dp"
+            android:layout_toEndOf="@+id/temp_tv"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/state_weather_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/temp_tv"
+            android:layout_margin="10dp"
+
+            android:layout_marginStart="20dp"
+            android:text="state"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/temp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="50dp"
+            android:text="temp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/state_im"
+            android:layout_gravity="end"
+            android:layout_marginStart="-95dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/state_im"
+            android:text="city"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
